@@ -45,30 +45,45 @@
             height: 2rem;
             background: rgba(0,0,0,0.5);
             border-radius: 50%;
-            border: none;
+            border: white 1px solid;
             display: grid;
             place-content: center;
             color: #fff;
     }
         .carrousel_btn-avant {
             left: 0;
+            color: white;
     }
         .carrousel_btn-apres {
             right: 0;
+            color: white;
     }
         .caroussel_liste-liens {
             display: flex;
             justify-content: center; 
-            margin: 0%; /* enlève les marges par défaut */
-            padding: 0%; /* enlève les padding par défaut */
+            margin: 5; /* enlève les marges par défaut */
+            padding: 0% ; /* enlève les padding par défaut */
             list-style-type: none; /* enlève les puces par défaut */
             gap: 1rem; /* espace entre les enfants */
     }
-        .actif {
+
+    .caroussel_lien {
+            padding: 0.5rem;
+            border-radius: 0.5rem;
+            text-decoration: none;
             color: #fff;
-            background-color: rgb(0, 119, 255);
-            padding: 5px;
+            background-color: #da6fda;
+            hover: #fff;
+            
     }
+    .actif {
+            color: #000;
+            background-color: #dbcadb;
+           
+    }
+
+
+
     </style>
 </head>
 <body>
