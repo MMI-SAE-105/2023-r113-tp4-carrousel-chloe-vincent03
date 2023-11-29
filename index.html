@@ -60,7 +60,15 @@
 </head>
 <body>
     <div class="carrousel" x-data="{}">
-        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"><</button><button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant">></button>
+        <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
+        @click="$refs.parent.scrollLeft -= $refs.parent.offsetWidth"
+        >
+            &lt;
+        </button>
+        <button class="carrousel_btn carrousel_btn-apres" aria-label="slide suivant"
+            @click="$refs.parent.scrollLeft += $refs.parent.offsetWidth"
+        >   
+            ></button>
         <div class="carrousel_parent-ecrans" x-ref="parent">
             <div id="ecran-1" class="carrousel_ecran">
                 <figure>
