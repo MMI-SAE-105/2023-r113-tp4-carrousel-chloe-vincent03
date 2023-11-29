@@ -64,6 +64,11 @@
             list-style-type: none; /* enlève les puces par défaut */
             gap: 1rem; /* espace entre les enfants */
     }
+        .actif {
+            color: #fff;
+            background-color: rgb(0, 119, 255);
+            padding: 5px;
+    }
     </style>
 </head>
 <body>
@@ -112,11 +117,11 @@
             </div>
         </div>
         <ul class="caroussel_liste-liens">
-            <li><a href="#ecran-1" class="{actif;hrefCourant==='#ecran-1'}">ecran 1</a></li>
-            <li><a href="#ecran-2" class="{actif;hrefCourant==='#ecran-2'}">ecran 2</a></li>
-            <li><a href="#ecran-3" class="{actif;hrefCourant==='#ecran-3'}">ecran 3</a></li>
-            <li><a href="#ecran-4" class="{actif;hrefCourant==='#ecran-4'}">ecran 4</a></li>
-            <li><a href="#ecran-5" class="{actif;hrefCourant==='#ecran-5'}">ecran 5</a></li>
+            <li><a href="#ecran-1" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-1'}">ecran 1</a></li>
+            <li><a href="#ecran-2" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-2'}">ecran 2</a></li>
+            <li><a href="#ecran-3" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-3'}">ecran 3</a></li>
+            <li><a href="#ecran-4" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-4'}">ecran 4</a></li>
+            <li><a href="#ecran-5" class="caroussel_lien" :class="{actif:hrefCourant==='#ecran-5'}">ecran 5</a></li>
         </ul>
     </div>
 </body>
