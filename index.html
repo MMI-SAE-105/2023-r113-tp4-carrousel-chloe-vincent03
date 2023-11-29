@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fe">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,28 +7,25 @@
     <script src="//unpkg.com/alpinejs" defer></script>
     <style>
     
- /* flex 
- width display non
-*/ 
-.carrousel{
-    box-sizing: border-box;/* change le box model */
-}
-img {
-    max-width: 100%;  /* image responsive, largeur maxi */
-    height: auto;    /* hauteur "auto" */
-}
-.carrousel_parent-ecrans {
-    display: flex;/* aligne horizontalement les enfants */
-    width: 100%;/* largeur du parent */
+        *{
+            box-sizing: border-box;/* change le box model */
+    }
+        img {
+            max-width: 100%;  /* image responsive, largeur maxi */
+            height: auto;    /* hauteur "auto" */
+    }
+        .carrousel_parent-ecrans {
+            display: flex;/* aligne horizontalement les enfants */
+            width: 100%;/* largeur du parent */
 
-}
-.carrousel_ecran {
-    width: 100%;/* largeur du parent pour chaque enfant */
-/* permet de garder toute la largeur du parent */
-}
-.carrousel_ecran figure {
-    margin: 0%; /* enlève les marges par défaut */
-}
+    }
+        .carrousel_ecran {
+            width: 100%;/* largeur du parent pour chaque enfant */
+        /* permet de garder toute la largeur du parent */
+    }
+        .carrousel_ecran figure {
+            margin: 0%; /* enlève les marges par défaut */
+    }
     </style>
 </head>
 <body>
