@@ -67,7 +67,9 @@
     </style>
 </head>
 <body>
-    <div class="carrousel" x-data="{}">
+    <div class="carrousel" x-data="{
+        hrefCourant: '#ecran-1',
+    }">
         <button class="carrousel_btn carrousel_btn-avant" aria-label="slide précedant"
         @click="$refs.parent.scrollLeft -= $refs.parent.offsetWidth"
         >
