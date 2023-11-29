@@ -6,13 +6,12 @@
     <title>Carrousel</title>
     <script src="//unpkg.com/alpinejs" defer></script>
     <style>
-        /* en vrac :
-100% 100% 100% 0 auto border-box box-sizing 
-display height flex flex none margin 
-max-width width width
+    
+ /* flex 
+ width display non
 */ 
-* {
-/* change le box model */
+.carrousel{
+    box-sizing: border-box;/* change le box model */
 }
 img {
     max-width: 100%;  /* image responsive, largeur maxi */
@@ -25,7 +24,7 @@ img {
 }
 .carrousel_ecran {
     width: 100%;/* largeur du parent pour chaque enfant */
-  /* permet de garder toute la largeur du parent */
+/* permet de garder toute la largeur du parent */
 }
 .carrousel_ecran figure {
     margin: 0%; /* enlève les marges par défaut */
