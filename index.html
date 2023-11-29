@@ -17,11 +17,12 @@
         .carrousel_parent-ecrans {
             display: flex;/* aligne horizontalement les enfants */
             width: 100%;/* largeur du parent */
+            overflow-x: scroll;
 
     }
         .carrousel_ecran {
             width: 100%;/* largeur du parent pour chaque enfant */
-        /* permet de garder toute la largeur du parent */
+            flex: none;/* permet de garder toute la largeur du parent */
     }
         .carrousel_ecran figure {
             margin: 0%; /* enlève les marges par défaut */
